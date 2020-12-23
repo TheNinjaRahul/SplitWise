@@ -21,9 +21,31 @@ In Memory DataBase:
 5) userOwe{userId,toUser,Amount,billId}
 
 
+This is spring boot gradle project.
+
+How to run:
+------------------
+Create jar of this project.
+You will need to build the jar file first. Here is the syntax to run the main class from a jar file.
+
+Commands:
+gradle build
+java -jar target/jarname.jar
+
+or
+
+./gradlew bootRun
+
 I have created SplitWise APIs that will be used to split the bill.
 
+Just open this link for swagger UI,while project is running.
+http://localhost:8080/swagger-ui.html#/
+
+it will be look like below image.
+
 <img src="Swagger.JPG"/>
+
+
 
 As you can see in the console I have created a different kind of controller based on their use cases.
 User Controller:
@@ -71,4 +93,9 @@ I am using ResponseEntity as a response when an exception occurs.
 I have used @query and join table in code itself to get the data.
 
 <b>In Memory Database (H2)</b>
+Just open this URL while project is running and you are good to go with in Memory DB.
+http://localhost:8080/h2-console
+
 <img src="H2ConsoleSnap.JPG"/>
+
+
