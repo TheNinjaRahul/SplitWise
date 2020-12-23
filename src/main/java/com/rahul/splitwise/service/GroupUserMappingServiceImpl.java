@@ -11,15 +11,27 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * The type Group user mapping service.
+ */
 @Service
 public class GroupUserMappingServiceImpl implements IGroupUserMappingService {
 
+    /**
+     * The Group user mapping dao.
+     */
     @Autowired
     GroupUserMappingDao groupUserMappingDao;
 
+    /**
+     * The User dao.
+     */
     @Autowired
     UserDao userDao;
 
+    /**
+     * The Group dao.
+     */
     @Autowired
     GroupDao groupDao;
 

@@ -2,6 +2,9 @@ package com.rahul.splitwise.model;
 
 import javax.persistence.*;
 
+/**
+ * The type Bill.
+ */
 @Entity
 @Table(name = "bill")
 public class Bill {

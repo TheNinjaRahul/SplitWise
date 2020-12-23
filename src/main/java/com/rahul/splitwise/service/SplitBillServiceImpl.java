@@ -13,21 +13,39 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The type Split bill service.
+ */
 @Service
 public class SplitBillServiceImpl implements ISplitBillService {
 
+    /**
+     * The Group dao.
+     */
     @Autowired
     GroupDao groupDao;
 
+    /**
+     * The Group user mapping dao.
+     */
     @Autowired
     GroupUserMappingDao groupUserMappingDao;
 
+    /**
+     * The User dao.
+     */
     @Autowired
     UserDao userDao;
 
+    /**
+     * The Bill dao.
+     */
     @Autowired
     BillDao billDao;
 
+    /**
+     * The Split bill dao.
+     */
     @Autowired
     SplitBillDao splitBillDao;
 

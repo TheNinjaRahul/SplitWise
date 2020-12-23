@@ -14,11 +14,19 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.List;
 
+/**
+ * The type Splitwise application.
+ */
 @SpringBootApplication
 @ComponentScan(basePackages = "com.*")
 @EnableSwagger2
 public class SplitwiseApplication {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         SpringApplication.run(SplitwiseApplication.class, args);
     }
@@ -42,6 +50,12 @@ public class SplitwiseApplication {
 //        };
 //    }
 
+    /**
+     * Gets all users.
+     *
+     * @param userDao the user dao
+     * @return the all users
+     */
     @Bean
     public CommandLineRunner getAllUsers(UserDao userDao) {
         return args -> {

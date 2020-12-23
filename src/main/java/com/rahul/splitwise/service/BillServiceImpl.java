@@ -7,9 +7,15 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * The type Bill service.
+ */
 @Service
 public class BillServiceImpl implements IBillService {
 
+    /**
+     * The Bill dao.
+     */
     @Autowired
     BillDao billDao;
 

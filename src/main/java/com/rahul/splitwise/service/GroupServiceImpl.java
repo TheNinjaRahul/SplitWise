@@ -7,9 +7,15 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * The type Group service.
+ */
 @Service
 public class GroupServiceImpl implements IGroupService {
 
+    /**
+     * The Group dao.
+     */
     @Autowired
     GroupDao groupDao;
 

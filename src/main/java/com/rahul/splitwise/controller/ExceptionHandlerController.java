@@ -11,8 +11,12 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+/**
+ * The type Exception handler controller.
+ */
 @ControllerAdvice
 public class ExceptionHandlerController extends ResponseEntityExceptionHandler {
+
 
     @ExceptionHandler({GroupNotFound.class, UserNotFound.class, GivenDataIsNotInProperFormat.class})
     public ResponseEntity<Object> handleCustomException(Exception ex, WebRequest request) {
@@ -20,4 +24,5 @@ public class ExceptionHandlerController extends ResponseEntityExceptionHandler {
         return handleExceptionInternal(ex, bodyOfResponse,
                 new HttpHeaders(), HttpStatus.EXPECTATION_FAILED, request);
     }
+
 }
