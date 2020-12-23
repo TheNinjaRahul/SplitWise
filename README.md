@@ -14,11 +14,11 @@ SplitWise:
  
 In Memory DataBase: 
 ------------------
-User{ id,name, email_id,username,password}
-group{groupId,Name,userId}
-groupMember(groupId,userid}
-bill {id,amount,desc}
-userOwe{userId,toUser,Amount,billId}
+1) User{ id,name, email_id,username,password}
+2) group{groupId,Name,userId}
+3) groupMember(groupId,userid}
+4) bill {id,amount,desc}
+5) userOwe{userId,toUser,Amount,billId}
 
 
 I have created SplitWise APIs that will be used to split the bill.
